@@ -13,5 +13,8 @@ function Animal(name, breed, age) {
     }
 }
 
+const inputData = document.querySelector('#inputData');
+const outputData = document.querySelector('#outputData');
 let dog = new Animal('Dog', 'Taksa', '2');
-console.log(dog.voice())
+inputData.innerHTML = 'new Animal(\'Dog\', \'Taksa\', \'2\')<br> dog.voice()';
+outputData.textContent = 'Результат: ' + dog.voice();

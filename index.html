@@ -3,13 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="console-output"></div>
-<script>
+<header>
+    <div class="marquee-container">
+        <div class="marquee-content" id="myLine"></div>
+    </div>
+</header>
+<main>
+    <section>
+        <div><a href="#" class="task" id="task_1_1">1.1. Написати функцію toCamelCase(), яка перетворює назву css-стилів
+            з дефісом у назву в стилі camelСase, наприклад: font-size у fontSize, background-color у backgroundColor,
+            text-align у textAlign</a></div>
+        <div><a href="#" class="task" id="task_1_2">1.2. Написати функцію toKebabCase(), обернену до toCamelCase(),
+            наприклад: fontSize у font-size, backgroundColor у background-color</a></div>
+        <div><a href="#" class="task" id="task_1_3">1.3. Написати функцію – калькулятор. Функція приймає рядок із
+            прикладом, визначає, яку дію необхідно виконати (+ - * /), переводить операнди в числа, вирішує приклад і
+            повертає результат (`12+7` => 12+7=19).</a></div>
+        <div><a href="#" class="task" id="task_1_4">1.4. У тексті замінити всі формати дат рррр/мм/дд на формат
+            дд.мм.рррр. Текст може бути як завгодно великий</a></div>
+        <div><a href="#" class="task" id="task_2_1">2.1. В об’єкті є властивість className, яка містить список «класів»
+            (слів, розділених пробілами):</a></div>
+        <div><a href="#" class="task" id="task_2_2">2.2. Об’єкт має властивість className, яка зберігає список «класів»
+            – слів, розділених пробілами: </a></div>
+        <div><a href="#" class="task" id="task_2_3">2.3. За допомогою конструктора об'єктів створити 3 об'єкти, які
+            будуть містити такі поля:
+            1) Кличку собаки
+            2) Породу
+            3) Bік
+            Створити метод, за допомогою якого собаки будуть говорити:
+            1) Тяф - якщо вік собаки менше року
+            2) Гав - якщо вік собаки від року до 3
+            3) Ррр-якщо вік собаки більше 3 років
+            Продемонструвати роботу метода
+        </a></div>
+        <div><a href="#" class="task" id="task_3_1">3.1. Нехай arr – масив рядків. Напишіть функцію unique(arr), яка
+            повертає масив, який містить тільки унікальні елементи arr.</a></div>
+        <div><a href="#" class="task" id="task_3_2">3.2. Створити масив «Сесія». Кожен елемент масиву є об’єктом, який
+            містить назву дисципліни, кількість балів, що набрав студент, та зараховано або незараховано.
 
-
-</script>
-<script src="task_3_2.js"></script>
+        </a></div>
+    </section>
+    <section>
+        <div class="result">
+            <iframe src="task_1_1.html"></iframe>
+        </div>
+    </section>
+</main>
+<script src="main.js"></script>
 </body>
 </html>

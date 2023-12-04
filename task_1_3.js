@@ -1,22 +1,5 @@
-function toCamelCase(sourceText) {
-    while (true) {
-        let indexElement = sourceText.indexOf('-');
-        if (indexElement === -1)
-            return sourceText
-        let upperChar = sourceText[indexElement + 1].toUpperCase();
-        sourceText = sourceText.slice(0, indexElement) + upperChar + sourceText.slice(indexElement + 2);
-    }
-}
-
-console.log(toCamelCase('background-color'))
-
-
-function toKebabCase(sourceText) {
-    return sourceText.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
-}
-
-console.log(toKebabCase('backgroundColor'))
-
+const inputData = document.querySelector('#inputData');
+const outputData = document.querySelector('#outputData');
 
 function calcString(sourceText) {
     const operators = "+-*/";
@@ -46,12 +29,10 @@ function calcString(sourceText) {
     } else return 'Incorrect expression';
 }
 
-console.log(calcString('23*4'))
+const sourceText = '23*4';
+const resulText = calcString(sourceText);
+console.log(sourceText);
+console.log(resulText);
+inputData.innerHTML = "Віхдні дані: " + sourceText;
+outputData.innerHTML = "Результат: " + resulText;
 
-
-function replaceDate(sourceText){
-    const regex = /(\d{4})\/(\d{2})\/(\d{2})/g;
-    return sourceText.replace(regex, '$3.$2.$1');
-}
-let text = "Hello from 1999/11/05 and 2000/05/12";
-console.log(replaceDate(text));

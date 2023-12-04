@@ -1,3 +1,5 @@
+const inputData = document.querySelector('#inputData');
+const outputData = document.querySelector('#outputData');
 let obj = {className: 'open menu'};
 
 function addClass(obj, cls) {
@@ -15,4 +17,6 @@ addClass(obj, 'open');
 addClass(obj, 'me');
 
 
+inputData.innerHTML = `Початкові дані: ${obj.className}<br>Віхдні дані: new, open, me`;
+outputData.innerHTML = "Результат: " + obj.className;
 

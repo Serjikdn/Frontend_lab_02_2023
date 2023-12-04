@@ -1,4 +1,6 @@
 let obj_2 = {className: 'open menu menu'};
+const inputData = document.querySelector('#inputData');
+const outputData = document.querySelector('#outputData');
 
 function removeClass(obj, cls) {
     const listObj = obj.className.split(" ");
@@ -15,8 +17,8 @@ function removeClass(obj, cls) {
     return obj.className = result;
 }
 
-// removeClass(obj_2, 'open');
+inputData.innerHTML = `Початкові дані: ${obj_2.className}<br>Віхдні дані: blabla, menu`;
 removeClass(obj_2, 'blabla');
-console.log(obj_2)
 removeClass(obj_2, 'menu');
-console.log(obj_2)
+outputData.innerHTML = "Результат: " + obj_2.className;
+
